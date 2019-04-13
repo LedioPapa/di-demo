@@ -8,11 +8,11 @@ import org.springframework.stereotype.Service;
  * Created by ledio on 4/13/19
  */
 @Service
-@Profile("en")
+@Profile("chinese")
 @Primary
-public class PrimaryGreetingServiceImpl implements GreetingService {
+public class PrimaryChineseGreetingServiceImpl implements GreetingService {
     @Override
     public String hello() {
-        return "Yo!!! from primary service";
+        return "NIHAO...ZAIJIAN";
     }
 }
