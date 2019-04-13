@@ -1,5 +1,7 @@
 package guru.springframework.didemo.controller;
 
+import guru.springframework.didemo.services.GreetingService;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 
 /**
@@ -9,8 +11,11 @@ import org.springframework.stereotype.Controller;
 // so it is registered with the application context
 public class MyController {
 
+    @Autowired
+    private GreetingService greetingService;
+
     public String hello() {
         System.out.println("Yoo!!");
-        return "";
+        return greetingService.hello();
     }
 }

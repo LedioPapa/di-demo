@@ -10,6 +10,6 @@ public class GreetingServiceImpl implements GreetingService {
 
     @Override
     public String hello() {
-        return "Yoo!!!";
+        return "Yoo!!! from original impl";
     }
 }
