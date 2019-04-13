@@ -8,11 +8,11 @@ import org.springframework.stereotype.Service;
  * Created by ledio on 4/13/19
  */
 @Service
-@Profile({"en", "default"}) //spring uses the default profile when no profile is selected
+@Profile("de")
 @Primary
-public class PrimaryGreetingServiceImpl implements GreetingService {
+public class PrimaryGermanGreetingServiceImpl implements GreetingService {
     @Override
     public String hello() {
-        return "Yo!!! from primary service";
+        return "Hallo von dem Dienst, der die deutsche Sprache implementiert";
     }
 }
