@@ -14,6 +14,7 @@ import org.springframework.context.support.PropertySourcesPlaceholderConfigurer;
 @PropertySource("classpath:datasource.properties")
 public class PropertyConfig {
 
+    //setting an environment var on intelliJ PROPERTY_NAME will override this
     @Value("${property.name}")
     String name;
 
