@@ -6,3 +6,11 @@ ledio:
     username: JMS Ledio
     password: JMS Password
     url: JMS URL
+
+---
+spring:
+  profiles: de
+
+ledio:
+  jms:
+    username: JMS Ledio German
