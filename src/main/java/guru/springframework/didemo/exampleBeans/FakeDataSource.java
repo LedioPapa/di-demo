@@ -37,10 +37,10 @@ public class FakeDataSource {
 
     @Override
     public String toString() {
-        return "FakeDataSource{" +
-                "name='" + name + '\'' +
-                ", password='" + password + '\'' +
-                ", url='" + url + '\'' +
+        return "FakeDataSource{\n" +
+                "    name='" + name + '\'' + ",\n" +
+                "    password='" + password + '\'' + ",\n" +
+                "    url='" + url + '\'' + '\n' +
                 '}';
     }
 }
