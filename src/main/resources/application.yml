@@ -1,0 +1,8 @@
+############################
+#    fake jms properties   #
+############################
+ledio:
+  jms:
+    username: JMS Ledio
+    password: JMS Password
+    url: JMS URL
