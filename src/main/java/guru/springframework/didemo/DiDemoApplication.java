@@ -1,6 +1,7 @@
 package guru.springframework.didemo;
 
 import guru.springframework.didemo.exampleBeans.FakeDataSource;
+import guru.springframework.didemo.exampleBeans.FakeJmsBroker;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ApplicationContext;
@@ -18,6 +19,9 @@ public class DiDemoApplication {
         FakeDataSource fakeDataSource = ctx.getBean(FakeDataSource.class);
 
         System.out.println(fakeDataSource);
+
+        FakeJmsBroker jmsBroker = (FakeJmsBroker) ctx.getBean(FakeJmsBroker.class);
+        System.out.println(jmsBroker.getUsername());
     }
 
 }
